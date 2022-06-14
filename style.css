@@ -1,0 +1,370 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+    background-color: #8fbc8f;
+    color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: #2f4f4f;
+    color: #ffffff;
+    padding: 0.5em 2.5em;
+    border: 1px solid #666666;
+    border-radius: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    transition: transform 200ms ease-in-out;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;
+    
+}
+
+.btn:hover {
+    background-color: #708090;
+}
+
+.btn_1 {
+    display: inline-block;
+    background: #2f4f4f;
+    color: #ffffff;
+    padding: 0.5em 2.5em;
+    border: 1px solid #666666;
+    border-radius: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    transition: transform 200ms ease-in-out;
+    font-weight: 700;
+    
+}
+
+.btn_1:hover {
+    background-color: #708090;
+}
+
+.button_1 {
+    height: 34px;
+    background: #2f4f4f;
+    border: 0;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+
+/* Typography */
+h1,
+h2 {
+    font-weight: 700;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+
+/* Layout */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/*Slideout Menu*/
+#slideout-menu {
+    display: none;
+    background: #708090;
+    z-index: 100;
+    position: fixed;
+    transition: 0.4s;
+    margin-top: 4em;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#slideout-menu ul {
+    list-style: none;
+    padding: 0 2em;
+}
+
+#slideout-menu ul li {
+    padding: 0.5em;
+}
+
+#slideout-menu a {
+    font-size: 1.25em;
+    color: #ffffff;
+}
+
+#slideout-menu a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    #slideout-menu {
+        display: block;
+    }
+}
+
+
+/*Navigation*/
+nav {
+    height: 72px;
+    background: #708090;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em 0 0;
+    box-sizing: border-box;
+    z-index: 100;
+    border-bottom: #2f4f4f 0.3rem solid;
+}
+
+nav a {
+    padding: 0 2em;
+    transition: 0.4s;
+    color: #ffffff;
+}
+
+nav a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+nav li {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+@media (max-width: 800px) {
+    nav ul {
+        display: none;
+    }
+}
+
+#branding {
+    display: flex;
+    height: 100%;
+    padding: 0 1em;
+    align-items: center;
+    transition: 0.4s;
+}
+
+#branding img {
+    width: 350px;
+}
+#menu-icon {
+    height: 100%;
+    font-size: 1.8rem;
+    padding: 0 4px;
+    color: #2f4f4f;
+    display: none;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    #menu-icon {
+        display: flex;
+    }
+}
+
+
+/* Showcase*/
+.welcome-section {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.2) url(https://i.postimg.cc/C1XCmyg2/pexels-cottonbro-5483077.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+    color: white;
+}
+
+.welcome-section h1 {
+    margin-top: 6rem;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.welcome-section p {
+    font-size: 2.5rem;
+    font-weight: 200;
+    font-style: italic;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .welcome-section {
+        height: 60vh;
+    }
+    .welcome-section h1 {
+        margin-top: 4rem;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    .welcome-section p {
+        font-size: 2rem;   
+    }
+}
+
+
+/*My work*/
+.projects-section {
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
+.projects-section-header {
+    font-size: 2.5rem;
+    font-style: italic;
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid #f0f0f0;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1.5rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+.project {
+    background: #008b8b;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    padding: 0.3em 0.3em;
+    color: #ffffff;
+}
+
+@media (max-width: 800px) {
+    .projects-section {
+        padding: 3rem 1rem;
+    }
+    .projects-section-header {
+        font-size: 1.8rem;
+        margin: 0 auto 3rem auto;
+    }
+    .projects-grid {
+        justify-content: center;
+        grid-gap: 4rem;
+        width: 50%;
+    }
+}
+
+
+/*Contact*/
+#contact {
+    background-color: #2f4f4f;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#contact h2 {
+    font-size: 3rem;
+}
+
+#contact p {
+    font-size: 1.5rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-links a {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin: 0 1em;
+}
+
+.contact-links a:hover,
+.contact-links a:focus {
+    color: #cccccc;
+}
+
+@media (max-width: 675px) {
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-links a {
+        padding: 0.25em 0;
+    }
+}
+
+
+/*Footer*/
+footer {
+    font-weight: 200;
+    text-align: center;
+    padding: 1rem 0;
+    background: #2f4f4f;
+    border-top: #708090 0.3rem solid;
+}
